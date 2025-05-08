@@ -7,7 +7,7 @@ jobs:
       - image:windows-3.0
     steps:
       - name: test
-        run: Get-ComputerInfo 
+        run: Get-Command
         shell: pwsh
        
 
