@@ -6,7 +6,9 @@ jobs:
       - codebuild-testrunnersg-${{ github.run_id }}-${{ github.run_attempt }}
       - image:windows-3.0
     steps:
-      - run: ver
-      - run: echo "Hello World"
+      - name: test
+        run: [System.Environment]::OSVersion
+        shell: pwsh
+      
 
 
