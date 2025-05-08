@@ -4,5 +4,6 @@ jobs:
   Hello-World-Job:
     runs-on:
       - codebuild-nldz-${{ github.run_id }}-${{ github.run_attempt }}
+      - image:windows-3.0
     steps:
       - run: echo "Hello World"
