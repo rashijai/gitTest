@@ -7,8 +7,8 @@ jobs:
       - image:windows-3.0
     steps:
       - name: test
-        run: [System.Environment]::OSVersion
-        shell: pwsh
-      
+        run: systeminfo 
+        shell: cmd
+       
 
 
