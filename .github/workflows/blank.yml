@@ -7,7 +7,10 @@ jobs:
       - image:windows-3.0
     steps:
       - name: test
-        run: Write-Host "OS:$([System.Environment]::OSVersion.Version)"
+        run: |
+          Write-Host "OS:$([System.Environment]::OSVersion.Version)"
+          Write-Host "platform:$([System.Environment]::OSVersion.Platform)"
+          Write-Host "Vstring:$([System.Environment]::OSVersion.VersionString)"
         shell: pwsh
        
 
