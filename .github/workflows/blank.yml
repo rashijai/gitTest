@@ -6,6 +6,7 @@ jobs:
       - codebuild-testrunnersg-${{ github.run_id }}-${{ github.run_attempt }}
       - image:windows-3.0
     steps:
+      - run: Get-CimInstance Win32_Operatingsystem | Select-Object -expand Caption
       - run: echo "Hello World"
 
 
