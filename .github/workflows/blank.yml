@@ -3,7 +3,7 @@ on: [push]
 jobs:
   Hello-World-Job:
     runs-on:
-      - codebuild-nldz-${{ github.run_id }}-${{ github.run_attempt }}
+      - codebuild-testrunnersg-${{ github.run_id }}-${{ github.run_attempt }}
       - image:windows-2.0
     steps:
       - name: test
